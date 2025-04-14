@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRZ - Desenvolvimento de Software</title>
+    <meta name="description" content="Portfólio profissional de desenvolvimento de software com a metodologia QRZ">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body class="dark-theme">
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <svg class="logo-svg" width="40" height="40" viewBox="0 0 100 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="20" fill="url(#logo-gradient)" />
+                    <!-- Letra Q -->
+                    <path d="M18 35 A12 12 0 1 1 29 47 L32 50" fill="none" stroke="white" stroke-width="4"
+                        stroke-linecap="round" />
+
+                    <!-- Letra R -->
+                    <path d="M42 65V35H55C59 35 62 38 62 42C62 46 59 49 55 49H42M55 49L63 65" fill="none" stroke="white"
+                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <!-- Letra Z -->
+                    <path d="M72 35H88L72 65H88" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="100" y2="100"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#9333EA" />
+                            <stop offset="100%" stop-color="#EC4899" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="gradient-text">QRZ</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#experiencias" class="nav-link">Experiências</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#metodologia" class="nav-link">Metodologia</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-outline"
+                    onclick="location.href='https://www.linkedin.com/in/eduardoqueirozdev/'">Contato</button>
+                <button class="btn btn-primary">Currículo</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-list">
+            <li><a href="#dashboard" class="mobile-nav-link">Dashboard</a></li>
+            <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+            <li><a href="#experiencias" class="mobile-nav-link">Experiências</a></li>
+            <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+            <li><a href="#metodologia" class="mobile-nav-link">Metodologia</a></li>
+            <li><a href="#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-actions">
+                <button class="btn btn-outline btn-full"
+                    onclick="location.href='https://www.linkedin.com/in/eduardoqueirozdev/'">Contato</button>
+                <button class="btn btn-primary btn-full">Currículo</button>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Vamos criar o software ideal para o seu negócio com a
+                            <span class="gradient-text">metodologia QRZ</span>
+                        </h1>
+                        <p class="hero-description">
+                            Como programador especializado em soluções desktop e web, meu foco é desenvolver softwares
+                            de alta
+                            qualidade que atendem às suas necessidades e ajudam a alcançar os resultados desejados.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-gradient">
+                                Saiba mais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="btn btn-outline">Ver projetos</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.pexels.com/photos/1102797/pexels-photo-1102797.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Desenvolvimento de software" class="rounded-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Dashboard</div>
+                    <h2 class="section-title">Painel de Controle <span class="gradient-text">QRZ</span></h2>
+                    <p class="section-description">
+                        Visualize e gerencie seus projetos com meu projeto intuitivo e moderno, desenvolvidos com a
+                        metodologia QRZ.
+                    </p>
+                </div>
+
+                <div class="dashboard-container">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <div class="dashboard-logo">
+                                <svg width="30" height="30" viewBox="0 0 100 100" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="100" rx="20" fill="url(#dashboard-gradient)" />
+                                    <!-- Letra Q -->
+                                    <path d="M18 35 A12 12 0 1 1 29 47 L32 50" fill="none" stroke="white"
+                                        stroke-width="4" stroke-linecap="round" />
+
+                                    <!-- Letra R -->
+                                    <path d="M42 65V35H55C59 35 62 38 62 42C62 46 59 49 55 49H42M55 49L63 65"
+                                        fill="none" stroke="white" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+
+                                    <!-- Letra Z -->
+                                    <path d="M72 35H88L72 65H88" fill="none" stroke="white" stroke-width="4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="dashboard-gradient" x1="0" y1="0" x2="100" y2="100"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#9333EA" />
+                                            <stop offset="100%" stop-color="#EC4899" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span>Gerenciador Atron Basic</span>
+                            </div>
+                            <div class="dashboard-actions">
+                                <div class="dashboard-search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    <span>Pesquisar...</span>
+                                </div>
+                                <div class="dashboard-user">
+                                    <div class="dashboard-avatar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="dashboard-sidebar">
+                                <div class="sidebar-item active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                    <span>Menu Principal</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                        </path>
+                                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                    </svg>
+                                    <span>Módulos</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                    </svg>
+                                    <span>Recorrências</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-main">
+                                <div class="dashboard-cards">
+                                    <div class="dashboard-card">
+                                        <div class="card-icon purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                                <circle cx="9" cy="7" r="4"></circle>
+                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="card-content">
+                                            <h3>Colaboradores</h3>
+                                            <p>128</p>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-card">
+                                        <div class="card-icon pink">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="card-content">
+                                            <h3>Tarefas</h3>
+                                            <p>42</p>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-card">
+                                        <div class="card-icon blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="card-content">
+                                            <h3>Capital</h3>
+                                            <p>R$ 89.5k</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-chart">
+                                    <div class="chart-header">
+                                        <h3>Desempenho Mensal</h3>
+                                        <div class="chart-legend">
+                                            <div class="legend-item">
+                                                <span class="legend-color purple"></span>
+                                                <span>Projetos</span>
+                                            </div>
+                                            <div class="legend-item">
+                                                <span class="legend-color pink"></span>
+                                                <span>Clientes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chart-content">
+                                        <div class="chart-bars">
+                                            <div class="chart-month">
+                                                <div class="chart-bar-group">
+                                                    <div class="chart-bar purple" style="height: 60%"></div>
+                                                    <div class="chart-bar pink" style="height: 80%"></div>
+                                                </div>
+                                                <span>Jan</span>
+                                            </div>
+                                            <div class="chart-month">
+                                                <div class="chart-bar-group">
+                                                    <div class="chart-bar purple" style="height: 70%"></div>
+                                                    <div class="chart-bar pink" style="height: 65%"></div>
+                                                </div>
+                                                <span>Fev</span>
+                                            </div>
+                                            <div class="chart-month">
+                                                <div class="chart-bar-group">
+                                                    <div class="chart-bar purple" style="height: 45%"></div>
+                                                    <div class="chart-bar pink" style="height: 90%"></div>
+                                                </div>
+                                                <span>Mar</span>
+                                            </div>
+                                            <div class="chart-month">
+                                                <div class="chart-bar-group">
+                                                    <div class="chart-bar purple" style="height: 80%"></div>
+                                                    <div class="chart-bar pink" style="height: 50%"></div>
+                                                </div>
+                                                <span>Abr</span>
+                                            </div>
+                                            <div class="chart-month">
+                                                <div class="chart-bar-group">
+                                                    <div class="chart-bar purple" style="height: 95%"></div>
+                                                    <div class="chart-bar pink" style="height: 75%"></div>
+                                                </div>
+                                                <span>Mai</span>
+                                            </div>
+                                            <div class="chart-month">
+                                                <div class="chart-bar-group">
+                                                    <div class="chart-bar purple" style="height: 75%"></div>
+                                                    <div class="chart-bar pink" style="height: 85%"></div>
+                                                </div>
+                                                <span>Jun</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="badge">Quem sou</div>
+                        <h2 class="section-title">Eduardo B. C. Queiroz</h2>
+                        <h3 class="section-subtitle">Backend Developer & Web/Desktop Developer</h3>
+                        <div class="about-text">
+                            <p>
+                                Sou Eduardo Queiroz, atuo como programador e analista de sistemas. Com 4 anos de estudos
+                                e quase 3
+                                no mercado de trabalho, atualmente sou analista de sistemas em uma empresa com sede
+                                no Rio de
+                                Janeiro na qual faço parte do grupo contábil.
+                            </p>
+                            <p>
+                                No tempo livre atuo desenvolvendo protótipos de sistemas modernos e de alta qualidade
+                                focados na gestão
+                                empresarial e comercial.
+                            </p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Queiroz-Dv" target="_blank" rel="noopener noreferrer"
+                                class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/eduardoqueirozdev/" target="_blank"
+                                rel="noopener noreferrer" class="social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-image-container">
+                        <div class="about-image-wrapper">
+                            <img src="https://avatars.githubusercontent.com/u/28829983?s=400&u=4bac25917b96a25c10c510603e12de46bdb24ef0&v=4"
+                                alt="Eduardo B. C. Queiroz" class="about-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencias" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Experiência</div>
+                    <h2 class="section-title">Minha <span class="gradient-text">trajetória profissional</span></h2>
+                    <p class="section-description">
+                        Conheça um pouco da minha experiência profissional e os projetos em que trabalhei.
+                    </p>
+                </div>
+
+                <div class="experience-container">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div class="experience-title-container">
+                                <h3 class="experience-title">Desenvolvedor FullStack</h3>
+                                <div class="experience-company">
+                                    <span>Empresa XYZ</span>
+                                    <span class="dot"></span>
+                                    <span>Rio de Janeiro, Brasil</span>
+                                </div>
+                            </div>
+                            <div class="experience-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>2021 - Presente</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            <p>
+                                Atuo como desenvolvedor em correções e implementações nos módulos para os clientes
+                                governamentais como: SENAC, SERPRO e SESC. De forma semelhante, fui responsável pela
+                                migração, organização e planejamento com uma pequena equipe dos componentes específicos.
+                                Além disso, também contribuí em outros módulos do sistema como Orçamento, Compras e
+                                Patrimônio
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="experience-title-container">
+                                <h3 class="experience-title">Desenvolvedor Web</h3>
+                                <div class="experience-company">
+                                    <span>Empresa ABC</span>
+                                    <span class="dot"></span>
+                                    <span>São Paulo, Brasil</span>
+                                </div>
+                            </div>
+                            <div class="experience-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span>2019 - 2021</span>
+                            </div>
+                        </div>
+                        <div class="experience-description">
+                            <p>
+                                Desenvolvimento de aplicações web utilizando tecnologias modernas como Angular, Node.js
+                                e
+                                C#. Implementação de APIs RESTful e integração com serviços de terceiros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Projetos</div>
+                    <h2 class="section-title">Meus <span class="gradient-text">projetos pessoais</span></h2>
+                    <p class="section-description">
+                        Conheça alguns dos projetos pessoais que desenvolvi para aprimorar minhas habilidades.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Sistema de Gestão Empresarial</h3>
+                            <p class="project-description">
+                                Sistema completo para gestão empresarial, com módulos de usuários, departamentos, e
+                                cargos.
+                            </p>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Sistema de Gestão Empresarial" class="project-image">
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn btn-outline"
+                                onclick="location.href='https://github.com/Queiroz-Dv/AtronTracker'">Ver
+                                detalhes</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">E-commerce</h3>
+                            <p class="project-description">
+                                Plataforma de e-commerce completa, com catálogo de produtos, carrinho de compras e
+                                pagamento online.
+                            </p>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="https://images.pexels.com/photos/6214471/pexels-photo-6214471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="E-commerce" class="project-image">
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn btn-outline">Ver detalhes</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">App de Finanças Pessoais</h3>
+                            <p class="project-description">
+                                Aplicativo para controle de finanças pessoais, com gráficos e relatórios detalhados.
+                            </p>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="App de Finanças Pessoais" class="project-image">
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn btn-outline">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="metodologia" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Metodologia</div>
+                    <h2 class="section-title">Metodologia <span class="gradient-text">QRZ</span></h2>
+                    <p class="section-description">
+                        Conheça a metodologia que utilizo para desenvolver projetos de alta qualidade e que atendem às
+                        necessidades dos clientes.
+                    </p>
+                </div>
+
+                <div class="methodology-grid">
+                    <div class="methodology-card">
+                        <div class="methodology-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-title">Qualidade</h3>
+                        <p class="methodology-description">
+                            Desenvolvimento de software com foco na qualidade, seguindo as melhores práticas e padrões
+                            de mercado.
+                        </p>
+                    </div>
+
+                    <div class="methodology-card">
+                        <div class="methodology-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-title">Rapidez</h3>
+                        <p class="methodology-description">
+                            Entrega rápida e eficiente, com foco em resultados e satisfação do cliente.
+                        </p>
+                    </div>
+
+                    <div class="methodology-card">
+                        <div class="methodology-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="methodology-title">Zelo</h3>
+                        <p class="methodology-description">
+                            Atenção aos detalhes e cuidado com cada aspecto do projeto, garantindo a melhor experiência
+                            para o usuário.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Habilidades</div>
+                    <h2 class="section-title">Minhas <span class="gradient-text">habilidades técnicas</span></h2>
+                    <p class="section-description">
+                        Conheça as tecnologias e ferramentas que utilizo para desenvolver projetos de alta qualidade.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M16 18l6-6-6-6"></path>
+                                <path d="M8 6l-6 6 6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">HTML/CSS/JavaScript</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Angular/.NET</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">SQL Server & Oracle PL/SQL</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Desktop/Web Development</h3>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">UI/UX Design</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <svg class="logo-svg" width="30" height="30" viewBox="0 0 100 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="20" fill="url(#footer-gradient)" />
+                    <!-- Letra Q -->
+                    <path d="M18 35 A12 12 0 1 1 29 47 L32 50" fill="none" stroke="white" stroke-width="4"
+                        stroke-linecap="round" />
+
+                    <!-- Letra R -->
+                    <path d="M42 65V35H55C59 35 62 38 62 42C62 46 59 49 55 49H42M55 49L63 65" fill="none" stroke="white"
+                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+                    <!-- Letra Z -->
+                    <path d="M72 35H88L72 65H88" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="footer-gradient" x1="0" y1="0" x2="100" y2="100"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#9333EA" />
+                            <stop offset="100%" stop-color="#EC4899" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="gradient-text">QRZ</span>
+                <span class="footer-author">• Eduardo Queiroz</span>
+            </div>
+            <p class="footer-copyright">
+                &copy; <span id="currentYear"></span> QRZ. Todos os direitos reservados.
+            </p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Termos</a>
+                <a href="#" class="footer-link">Privacidade</a>
+                <a href="https://www.linkedin.com/in/eduardoqueirozdev/" class="footer-link">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
